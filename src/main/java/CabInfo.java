@@ -12,8 +12,8 @@ public class CabInfo {
     }
 
     public String insertQuery() {
-        System.out.println("INSERT INTO CABS (cabName, cabDriver) VALUES (\"" +this.thisCab +"\",\""+ this.thisDriver + "\")");
-        return "INSERT INTO CABS (cabName, cabDriver) VALUES (" +this.thisCab +","+ this.thisDriver + ")";
+        System.out.println("INSERT INTO CABS (cabName, cabDriver) VALUES (“" +this.thisCab +"”,“"+ this.thisDriver + "”)");
+        return "INSERT INTO CABS (cabName, cabDriver) VALUES (\"" +this.thisCab +"\",\""+ this.thisDriver + "\")";
     }
 
     public String retriveQuery() {

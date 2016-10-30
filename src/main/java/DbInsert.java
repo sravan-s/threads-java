@@ -39,10 +39,10 @@ public class DbInsert {
     }
     public static void freeMe(String threadName) {
         isFree = true;
-        System.out.println(threadName + "has the DB Connection");
+        System.out.println(threadName + "released the DB Connection");
     }
     public static void takeMe(String threadName) {
         isFree = false;
-        System.out.println(threadName + "released the DB Connection");
+        System.out.println(threadName + "has the DB Connection");
     }
 }
